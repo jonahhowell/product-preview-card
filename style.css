@@ -1,8 +1,37 @@
+:root {
+    --finance-color: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --width: 250px;
+    --height: calc(1.5 * var(--width));
+}
+
 html, body {
     padding: 0px;
     margin: 0px;
 }
 
 body {
-    background-color: hsl(30, 38%, 92%);
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#card {
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+img {
+    width: var(--width);
+    height: var(--height);
+}
+
+#text {
+    width: var(--width);
+    height: var(--height);
+    background-color: white;
 }
