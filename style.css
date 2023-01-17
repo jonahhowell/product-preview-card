@@ -101,7 +101,7 @@ body {
     background-color: var(--verydarkblue);
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 600px){
     #card {
         flex-direction: column;
     }
@@ -110,5 +110,9 @@ body {
         content: url(./images/image-product-mobile.jpg);
         width: 250px;
         height: auto;
+    }
+
+    #visuals {
+        height: 174.22px;
     }
 }
