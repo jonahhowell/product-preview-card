@@ -32,9 +32,15 @@ body {
     display: flex;
     border-radius: 12px;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
 
-img {
+#visuals {
+    margin: 0px;
+}
+
+#product {
     width: var(--width);
     height: var(--height);
 }
@@ -93,4 +99,16 @@ img {
 #btn:hover {
     cursor: pointer;
     background-color: var(--verydarkblue);
+}
+
+@media only screen and (max-width: 500px){
+    #card {
+        flex-direction: column;
+    }
+
+    #product {
+        content: url(./images/image-product-mobile.jpg);
+        width: 250px;
+        height: auto;
+    }
 }
