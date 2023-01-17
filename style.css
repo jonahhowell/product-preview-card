@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
 :root {
-    --finance-color: hsl(158, 36%, 37%);
+    --dark-cyan: hsl(158, 36%, 37%);
     --cream: hsl(30, 38%, 92%);
     --width: 250px;
     --height: calc(1.5 * var(--width));
@@ -19,6 +21,12 @@ body {
     height: 100vh;
 }
 
+* {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+}
+
 #card {
     display: flex;
     border-radius: 12px;
@@ -34,4 +42,27 @@ img {
     width: var(--width);
     height: var(--height);
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#price {
+    display: flex;
+}
+
+#title {
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#btn {
+    color: white;
+    background-color: var(--dark-cyan);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
 }
