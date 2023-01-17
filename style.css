@@ -3,6 +3,7 @@
 :root {
     --dark-cyan: hsl(158, 36%, 37%);
     --cream: hsl(30, 38%, 92%);
+    --verydarkblue: hsl(212, 21%, 14%);
     --width: 250px;
     --height: calc(1.5 * var(--width));
 }
@@ -49,8 +50,25 @@ img {
     padding: 20px;
 }
 
+#logo {
+    width: 20px;
+    height: auto;
+}
+
 #price {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.saleprice {
+    font-family: Fraunces;
+    font-size: 24px;
+    color: var(--dark-cyan);
+}
+
+.normalprice {
+    text-decoration: line-through;
 }
 
 #title {
@@ -65,4 +83,14 @@ img {
     border: none;
     padding: 10px;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color .15s;
+}
+
+#btn:hover {
+    cursor: pointer;
+    background-color: var(--verydarkblue);
 }
